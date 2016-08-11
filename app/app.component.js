@@ -9,16 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by KE on 2016/8/10.
+ * Created by KE on 2016/8/12.
  */
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Tour of Heroes';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: "\n    <h1>{{title}}</h1>\n    <my-heroes></my-heroes>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
